@@ -1,0 +1,25 @@
+<!-- recarga-electronica.component.html -->
+
+<div>
+    <h2>Realizar Recarga Electrónica</h2>
+  
+    <form>
+      <label for="numeroTelefono">Número de Teléfono:</label>
+      <input type="text" id="numeroTelefono" name="numeroTelefono" [(ngModel)]="nuevaRecarga.numeroTelefono" required>
+  
+      <br>
+  
+      <label for="operador">Operador:</label>
+      <input type="text" id="operador" name="operador" [(ngModel)]="nuevaRecarga.operador" required>
+  
+      <br>
+  
+      <label for="monto">Monto:</label>
+      <input type="number" id="monto" name="monto" [(ngModel)]="nuevaRecarga.monto" required>
+  
+      <br>
+  
+      <button type="button" (click)="realizarRecarga()">Realizar Recarga</button>
+    </form>
+  </div>
+  
